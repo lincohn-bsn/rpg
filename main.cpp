@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include <string>
 #include <locale>
 
@@ -54,7 +55,34 @@ int main(){//Bloco de Comandos
             cout<<"====================================================================="<<endl;
             system("pause");
             system("cls");//limpando a tela
-        }//parente do menu1 = 1
+        }//parentese do menu1 == 1
+
+        if(menu1 == 2){
+            cout<<"====================================================================="<<endl;
+            cout<<"                         Listando Personagens                        "<<endl;
+            cout<<"====================================================================="<<endl;
+
+            system("pause");
+            system("cls");//limpando a tela
+
+        }else if(menu1 == 3){//parentese do menu1 == 2
+            cout<<"====================================================================="<<endl;
+            cout<<"               Edição de dos cadastros dos personagens               "<<endl;
+            cout<<"====================================================================="<<endl;
+
+            system("pause");
+            system("cls");//limpando a tela
+
+        }else if(menu1 == 4){//parentese do menu1 == 3
+            cout<<"====================================================================="<<endl;
+            cout<<"                             Relatórios                              "<<endl;
+            cout<<"====================================================================="<<endl;
+
+            system("pause");
+            system("cls");//limpando a tela
+
+        }//parentese do menu1 == 4
+
     }//parentese do while do menu principal
     return 0;
 }
