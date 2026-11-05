@@ -14,6 +14,7 @@ void limpar_tela() {
 
 // Estrutura com as informações da ficha do personagem
 struct ficha_personagem {
+    int personagem;
     string nome;
     int idade;
     int nivel;
@@ -59,6 +60,7 @@ int main() {
                 return 0;
 
             // Cadastro de personagens
+            
             case 1:
                 cout << "============================================================" << endl;
                 cout << "                  CADASTRO DE PERSONAGEM                    " << endl;
@@ -92,16 +94,22 @@ int main() {
                 cout << "============================================================" << endl;
                 cout << "           PERSONAGEM CADASTRADO COM SUCESSO!               " << endl;
                 cout << "============================================================" << endl;
+                cout << endl;
 
                 limpar_tela();
                 break;
 
             // Listagem de personagens
             case 2:
+                for (int w = 0; w < 99; w++){
                 cout << "============================================================" << endl;
                 cout << "               PERSONAGENS CADASTRADOS                      " << endl;
                 cout << "============================================================" << endl;
                 cout << endl;
+
+                    cout << "Personagem "<<w+1<<endl;
+                    
+                }
 
                 
 
