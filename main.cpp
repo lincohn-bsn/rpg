@@ -83,6 +83,12 @@ int main(){//Bloco de Comandos
 
         }//parentese do menu1 == 4
 
+        else if (menu1 >=4){
+            cout<<"ERRO : COMANDO INVÁLIDO"<<endl;
+            system("pause");
+            system("cls");
+        }//parentese do menu1 >= 4
+
     }//parentese do while do menu principal
     return 0;
 }
