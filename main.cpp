@@ -36,7 +36,7 @@ int main(){//Bloco de Comandos
     cout<<" 0) Sair "<<endl;
     cout<<"====================================================================="<<endl;
     cin>>menu1;//a escolha do usuario do menu
-    Limpar();//Pausa e limpa a tela
+    system("cls");//limpando a tela
         if(menu1 == 0){//comando para sair quando digitar 0
             return 0;
         }//parente do menu1 = 0
