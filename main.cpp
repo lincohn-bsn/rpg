@@ -4,6 +4,10 @@
 #include <locale>
 
 using namespace std;
+void Limpar(){
+    system("pause");
+    system("cls");//limpando a tela
+};
 
 struct FixaPersonagem{ //A estrutura da fixa do personagem
 string nome;
@@ -32,7 +36,7 @@ int main(){//Bloco de Comandos
     cout<<" 0) Sair "<<endl;
     cout<<"====================================================================="<<endl;
     cin>>menu1;//a escolha do usuario do menu
-    system("cls");//limpar a tela
+    Limpar();//Pausa e limpa a tela
         if(menu1 == 0){//comando para sair quando digitar 0
             return 0;
         }//parente do menu1 = 0
@@ -53,8 +57,7 @@ int main(){//Bloco de Comandos
             cout<<"Qual o nome do usuário que crio o personagem :"<<endl;
             cin>>personagem.nomeDoUsuario;
             cout<<"====================================================================="<<endl;
-            system("pause");
-            system("cls");//limpando a tela
+           Limpar();//Pausa e limpa a tela
         }//parentese do menu1 == 1
 
         if(menu1 == 2){
@@ -62,32 +65,26 @@ int main(){//Bloco de Comandos
             cout<<"                         Listando Personagens                        "<<endl;
             cout<<"====================================================================="<<endl;
 
-            system("pause");
-            system("cls");//limpando a tela
+           Limpar();//Pausa e limpa a tela
 
         }else if(menu1 == 3){//parentese do menu1 == 2
             cout<<"====================================================================="<<endl;
             cout<<"               Edição de dos cadastros dos personagens               "<<endl;
             cout<<"====================================================================="<<endl;
 
-            system("pause");
-            system("cls");//limpando a tela
+            Limpar();//Pausa e limpa a tela
 
         }else if(menu1 == 4){//parentese do menu1 == 3
             cout<<"====================================================================="<<endl;
             cout<<"                             Relatórios                              "<<endl;
             cout<<"====================================================================="<<endl;
 
-            system("pause");
-            system("cls");//limpando a tela
+            Limpar();//Pausa e limpa a tela
 
-        }//parentese do menu1 == 4
-
-        else if (menu1 >=4){
-            cout<<"ERRO : COMANDO INVÁLIDO"<<endl;
-            system("pause");
-            system("cls");
-        }//parentese do menu1 >= 4
+        }else{//parentese do menu1 == 4
+            cout<<"Número não encontrado"<<endl;
+            Limpar();//Pausa e limpa a tela
+        }//parentese do menu1 == qualquer outro número
 
     }//parentese do while do menu principal
     return 0;
