@@ -101,6 +101,9 @@ int main() {
                 cout << "============================================================" << endl;
                 cout << "               PERSONAGENS CADASTRADOS                      " << endl;
                 cout << "============================================================" << endl;
+                cout << endl;
+
+                
 
                 limpar_tela();
                 break;
